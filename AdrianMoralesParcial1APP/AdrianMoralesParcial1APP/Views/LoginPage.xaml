@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AdrianMoralesParcial1APP.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+
+
+            <Entry x:Name="TxtUserName" TextTransform="Lowercase" Keyboard="Email" Placeholder="Email" HorizontalTextAlignment="Center" FontSize="Large" TextColor="Black" />
+
+            <Entry x:Name="TxtPassword" WidthRequest="250" IsPassword="True" HorizontalTextAlignment="Center" Placeholder="Password" FontSize="Large" TextColor="Black" />
+
+            <Switch x:Name="SwSeePassword" IsToggled="False" Toggled="CmdSeePassword" />
+
+            <Button VerticalOptions="Center" Text="Ingreso"  Clicked="CmdUserRegister" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
